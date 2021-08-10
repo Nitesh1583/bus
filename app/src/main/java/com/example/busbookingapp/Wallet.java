@@ -23,9 +23,9 @@ Button wallettop;
         debit= findViewById(R.id.debit);
         netbanking= findViewById(R.id.netbanking);
         upi= findViewById(R.id.upi);
-        walletback= findViewById(R.id.walletback);
-        wallettop= findViewById(R.id.wallettop);
 
+        wallettop= findViewById(R.id.wallettop);
+        walletback= findViewById(R.id.walletback);
 
 
         debit.setOnClickListener(new View.OnClickListener() {
