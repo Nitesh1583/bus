@@ -1,0 +1,158 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/rectangle_6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-24dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:background="@drawable/rrectangle">
+        <ImageView
+            android:id="@+id/buslogo"
+            android:layout_weight="1"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_200sdp"
+          android:layout_marginLeft="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/busbooklogo">
+
+        </ImageView>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Sign in"
+            android:textColor="#1463A8"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold"></TextView>
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="Username"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:background="@drawable/round"
+            android:textColor="#000">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:hint="Password"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"
+            android:background="@drawable/round"
+            android:textColor="#000">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1">
+
+            </CheckBox>
+
+
+            <TextView
+                android:id="@+id/rp"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Remember Password "
+                android:textColor="#000"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:text="Forgot Password ?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#1463A8"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:backgroundTintMode="src_over"></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signinb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_70sdp"
+            android:background="@drawable/busbutton"
+            android:text="Sign in"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFF"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            app:backgroundTintMode="multiply"></Button>
+
+
+        <TextView
+            android:id="@+id/signup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="Don't have an account ? Signup now"
+            android:textColor="#000"
+            android:textSize="@dimen/_10sdp">
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

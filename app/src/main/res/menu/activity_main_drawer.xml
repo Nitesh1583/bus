@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/myTickets"
+            android:icon="@drawable/ticket"
+            android:title="Tickets"
+            />
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+
+        <item
+            android:id="@+id/transaction"
+            android:icon="@drawable/tran"
+            android:title="Transaction" />
+
+
+        <item
+            android:id="@+id/offers"
+            android:icon="@drawable/discount"
+            android:title="Offers" />
+
+        <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/information"
+        android:title="Help And Support" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share With friends"
+            >
+
+        </item>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_profile" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+
+
+
+
+
+    </group>
+</menu>

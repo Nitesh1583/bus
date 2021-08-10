@@ -1,0 +1,460 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:orientation="vertical"
+        android:background="@drawable/rrectangle">
+
+        <EditText
+            android:id="@+id/current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:hint="Current Location"
+            android:textSize="@dimen/_12sdp"
+            android:drawableRight="@drawable/ic_baseline_location_on_24"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:background="@drawable/round"
+            android:textColor="#000">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_12sdp"
+            android:hint="Where would you like to go today ?"
+            android:drawableRight="@drawable/ic_baseline_add_location_24"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:background="@drawable/round"
+            android:textColor="#000">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+
+
+        <TextView
+
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="30/July/2021"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round"
+            android:textColor="#000">
+        </TextView>
+
+        <TextView
+            android:id="@+id/homefindbus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:background="@drawable/round"
+            android:paddingLeft="@dimen/_50sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="Find Bus"
+            android:textColor="#000"></TextView>
+
+</LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/bigrec"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Wallet"
+            android:textSize="@dimen/_10sdp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:text="Rs. 500"
+                android:textColor="#000"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"></TextView>
+
+
+            <Button
+                android:id="@+id/topup"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/busbutton"
+                android:backgroundTintMode="multiply"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:text="TOP UP">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="@dimen/_59sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:text="Top Cities"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+    <LinearLayout
+        android:layout_width="@dimen/_330sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/city1"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_location_city_24"
+            android:background="@drawable/offer"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="City Name"
+            android:textColor="#000"></TextView>
+
+        <TextView
+            android:id="@+id/city2"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_location_city_24"
+            android:background="@drawable/offer"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="City Name"
+            android:textColor="#000"></TextView>
+        <TextView
+            android:id="@+id/city3"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_location_city_24"
+            android:background="@drawable/offer"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="City Name"
+            android:textColor="#000"></TextView>
+        <TextView
+            android:id="@+id/city4"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_baseline_location_city_24"
+            android:background="@drawable/offer"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="City Name"
+            android:textColor="#000"></TextView>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:text="Top Routes"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="@dimen/_276sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/mapp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_75sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/rectanglelong">
+
+
+                <TextView
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                   android:text="City name"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_8sdp"></TextView>
+
+                <TextView
+                    android:layout_width="@dimen/_72sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_18sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:background="@drawable/time"
+                    android:text="1 Hour 20 Min"
+                    android:textSize="@dimen/_6sdp"
+                    android:textColor="#fff"></TextView>
+
+
+                <TextView
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="City name"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_8sdp"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_31sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@drawable/rectanglesmall"
+                    android:orientation="vertical">
+
+<ImageView
+    android:layout_width="@dimen/_19sdp"
+    android:layout_height="@dimen/_9sdp"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:src="@drawable/busc"></ImageView>
+
+                    <TextView
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Find bus"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_8sdp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_276sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/mapp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_75sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/rectanglelong">
+
+
+                <TextView
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="City name"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_8sdp"></TextView>
+
+                <TextView
+                    android:layout_width="@dimen/_72sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:background="@drawable/time"
+                    android:text="1 Hour 20 Min"
+                    android:textSize="@dimen/_8sdp"
+                    android:textColor="#fff"></TextView>
+
+
+                <TextView
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="City name"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_8sdp"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_41sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@drawable/rectanglesmall"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_19sdp"
+                        android:layout_height="@dimen/_9sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/busc"></ImageView>
+
+                    <TextView
+                        android:layout_width="@dimen/_36sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="Find bus"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_8sdp"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="@dimen/_67sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:text="Offers"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_296sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:src="@drawable/group">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/_296sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:src="@drawable/group">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

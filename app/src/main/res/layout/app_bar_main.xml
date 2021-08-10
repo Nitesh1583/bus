@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.BusBookingApp.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1E88E5"
+            app:popupTheme="@style/Theme.BusBookingApp.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_gravity="bottom|end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <TextView
+                android:id="@+id/homebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_baseline_home_24"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#000"
+                android:textSize="@dimen/_5sdp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/ticketbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tt"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tickets"
+                android:textColor="#000"
+                android:textSize="@dimen/_5sdp">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/findbusbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_baseline_directions_bus_24"
+                android:gravity="center"
+                android:text="FindBus"
+                android:textColor="#000"
+                android:textSize="@dimen/_10sdp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/walletbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:drawableTop="@drawable/ic_baseline_account_balance_wallet_24"
+                android:gravity="center"
+                android:text="Wallet"
+                android:textColor="#000"
+                android:textSize="@dimen/_5sdp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/profilebar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_baseline_person_24"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#000"
+                android:textSize="@dimen/_5sdp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

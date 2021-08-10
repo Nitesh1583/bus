@@ -1,0 +1,272 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <ImageView
+                    android:id="@+id/profileback"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:layout_marginRight="@dimen/_200sdp"
+                    android:layout_marginTop="@dimen/_25sdp"></ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileg"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_baseline_edit_24"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ellipse"></de.hdodenhof.circleimageview.CircleImageView>
+            </LinearLayout>
+
+            <SearchView
+                android:layout_width="@dimen/_285sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/round"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search here..."></SearchView>
+            <LinearLayout
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_71sdp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bigrec"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Wallet"
+                    android:textSize="15dp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:text="Rs. 500"
+                        android:textColor="#000"
+                        android:textSize="25dp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <Button
+                        android:id="@+id/topup"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/busbutton"
+                        android:backgroundTintMode="multiply"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        android:text="TOP UP">
+
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/_295sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/stroke"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:src="@drawable/pp"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="ABCD"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_12sdp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="1234567890"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_12sdp"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="Location Name"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_12sdp"></TextView>
+
+                    <TextView
+                        android:id="@+id/editprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_120sdp"
+                        android:layout_weight="1"
+                        android:text="Edit Profile"
+                        android:textColor="#0E25E6"
+                        android:textSize="@dimen/_10sdp"></TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:text="My Dashboard"
+                android:textColor="#000"
+                android:textSize="@dimen/_12sdp"></TextView>
+
+
+        <TextView
+            android:id="@+id/ticketprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/stroke2"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"
+           android:drawableRight="@drawable/tt"
+            android:text="Tickets"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+
+        <TextView
+            android:id="@+id/walletprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:background="@drawable/stroke2"
+            android:text="Wallet"
+            android:drawableRight="@drawable/wallet"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+        <TextView
+            android:id="@+id/transactionprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:background="@drawable/stroke2"
+            android:drawableRight="@drawable/tran"
+            android:text="Transactions"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+        <TextView
+            android:id="@+id/offerprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:background="@drawable/stroke2"
+         android:drawableRight="@drawable/offericon"
+            android:text="Offers"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Share with Friends"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:background="@drawable/stroke2"
+            android:drawableRight="@drawable/ic_baseline_share_24"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+        <TextView
+            android:id="@+id/logoutprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:background="@drawable/stroke2"
+            android:drawableRight="@drawable/ic_baseline_power_settings_new_24"
+            android:text="Logout"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"></TextView>
+    </LinearLayout>
+
+
+</ScrollView>
